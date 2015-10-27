@@ -1,0 +1,154 @@
+#
+# SASS Lint options used by grunt-sass-lint task
+#
+
+options:
+  #formatter: stylish
+  merge-default-rules: true
+  # Set the formatter to 'html'
+  #formatter: html
+  # Output file instead of logging results
+  #output-file: 'linters/sass-lint.html'
+
+rules:
+  brace-style:
+    - 2
+    -
+      style: 'stroustrup'
+      allow-single-line: true
+  # clean-import-paths:
+  #   - 2
+  #   -
+  #     leading-underscore: true
+  #     filename-extension: false
+  empty-line-between-blocks:
+    - 2
+    -
+      include: true   # space between nested rules and attributes
+      allow-single-line-rulesets: true
+  extends-before-declarations: 2
+  extends-before-mixins: 2
+  final-newline: 0
+  force-attribute-nesting: 0
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+  function-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: 'hyphenatedlowercase'
+  hex-length: 0
+  hex-notation: 0
+  indentation:
+    - 2
+    -
+      size: 2
+  leading-zero:
+    - 1
+    -
+      include: true
+  mixin-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: 'hyphenatedlowercase'
+  mixins-before-declarations: 2
+  nesting-depth:
+    - 1
+    -
+      max-depth: 4
+  no-color-keywords: 0
+  no-color-literals: 0
+  no-css-comments: 0
+  no-debug: 2
+  no-duplicate-properties:
+    - 2
+    -
+      exclude:
+        - display
+  no-empty-rulesets: 0
+  no-extends: 0
+  no-ids: 0
+  no-important: 0
+  no-invalid-hex: 2
+  no-mergeable-selectors: 1
+  no-misspelled-properties: 2
+  no-qualifying-elements: 1
+  no-trailing-zero: 2
+  no-transition-all: 1
+  no-url-protocols: 1
+  no-vendor-prefixes:
+    - 1
+    -
+      excluded-identifiers:
+        - 'ms'
+  no-warn: 1
+  one-declaration-per-line: 0
+  placeholder-in-extend: 0
+  placeholder-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: 'hyphenatedlowercase'
+  property-sort-order:
+    - 2
+    -
+      order: 'alphabetical'
+  quotes:
+    - 2
+    -
+      style: 'single'
+  shorthand-values: 2
+  single-line-per-selector: 2
+  space-after-bang:
+    - 2
+    -
+      include: false
+  space-after-colon:
+    - 2
+    -
+      include: true
+  space-after-comma:
+    - 2
+    -
+      include: true
+  space-before-bang:
+    - 2
+    -
+      include: true
+  space-before-brace:
+    - 2
+    -
+      include: true
+  space-before-colon:
+    - 2
+    -
+      include: false
+  space-between-parens:
+    - 2
+    -
+      include: false
+  trailing-semicolon:
+    - 2
+    -
+      include: true
+  url-quotes:
+    - 2
+    -
+      include: false
+  variable-for-property:
+    - 1
+    -
+      properties:
+        - 'background-color'
+        - 'border-color'
+        - 'color'
+  variable-name-format:
+    - 2
+    -
+      allow-leading-underscore: true
+      convention: 'hyphenatedlowercase'
+  zero-unit:
+    - 2
+    - include: false
+
